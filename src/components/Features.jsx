@@ -31,12 +31,14 @@ export default function Features() {
                                         fill="white" />
                                 </svg>
                             </div>
-                            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                            {/* <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
                                 Premium Property Listings
                             </h4>
                             <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
                                 Discover an array of hand-picked properties that meet the highest standards of luxury and comfort.
-                            </p>
+                            </p> */}
+
+                            <FeatureComponent heading="Premium Property Listings" description="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort." />
                             <a href="javascript:void(0)"
                                 class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
                                 Learn More
@@ -55,12 +57,14 @@ export default function Features() {
                                         fill="white" />
                                 </svg>
                             </div>
-                            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                            {/* <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
                                 Personalized Property Matching
                             </h4>
                             <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
                                 Our advanced matching system pairs you with properties that align with your specific needs and desires.
-                            </p>
+                            </p> */}
+
+                            <FeatureComponent heading="Personalized Property Matching" description="Our advanced matching system pairs you with properties that align with your specific needs and desires." />
                             <a href="javascript:void(0)"
                                 class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
                                 Learn More
@@ -103,12 +107,14 @@ export default function Features() {
                                         fill="white" />
                                 </svg>
                             </div>
-                            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                            {/* <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
                                 Expert Guidance and Support
                             </h4>
                             <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
                                 Benefit from the expertise of our dedicated team of real estate professionals.
-                            </p>
+                            </p> */}
+
+                            <FeatureComponent heading="Expert Guidance and Support" description="Benefit from the expertise of our dedicated team of real estate professionals." />
                             <a href="javascript:void(0)"
                                 class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
                                 Learn More
@@ -136,13 +142,16 @@ export default function Features() {
                                         fill="white" />
                                 </svg>
                             </div>
-                            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                            {/* <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
                                 Virtual Tours
                             </h4>
                             <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
                                 Take advantage of our cutting-edge virtual tours and 3D walkthroughs to explore properties from the
                                 comfort of your home.
-                            </p>
+                            </p> */}
+
+                            <FeatureComponent heading="Virtual Tours" description="Take advantage of our cutting-edge virtual tours and 3D walkthroughs to explore properties from the
+                                comfort of your home." />
                             <a href="javascript:void(0)"
                                 class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
                                 Learn More
@@ -151,6 +160,20 @@ export default function Features() {
                     </div>
                 </div>
             </div>
+        </div>
+    );
+}
+
+
+function FeatureComponent({ heading, description }) {
+    return (
+        <div>
+            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                {heading}
+            </h4>
+            <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                {description}
+            </p>
         </div>
     );
 }
